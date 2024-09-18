@@ -17,6 +17,6 @@ spec:
       spec:
         containers:
           - name: restaurante-api
-            image:
+            image: link-da-imagem-no-aws
             ports:
               - containerPort: 80
