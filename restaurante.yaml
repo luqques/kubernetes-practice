@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+  name: restaurante-deployment
+  labels:
+    app: restaurante-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: restaurante-api
+  template:
+    metadata:
+      name: 
+        labels:
+          app: restaurante-api
+      spec:
+        containers:
+          - name: restaurante-api
+            image:
+            ports:
+              - containerPort: 80
